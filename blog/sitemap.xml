@@ -4,64 +4,64 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/</loc>
-<lastmod>2021-03-04T15:27:39-00:00</lastmod>
+<loc>./</loc>
+<lastmod>2021-03-04T15:42:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/archives.html</loc>
-<lastmod>2021-03-04T15:27:39-00:00</lastmod>
+<loc>./archives.html</loc>
+<lastmod>2021-03-04T15:42:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/tags.html</loc>
-<lastmod>2021-03-04T15:27:39-00:00</lastmod>
+<loc>./tags.html</loc>
+<lastmod>2021-03-04T15:42:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/categories.html</loc>
-<lastmod>2021-03-04T15:27:39-00:00</lastmod>
+<loc>./categories.html</loc>
+<lastmod>2021-03-04T15:42:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/pages/about/</loc>
+<loc>./pages/about/</loc>
 <lastmod>2021-02-25T16:08:42+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/2020-Fall-Intro-to-computer-programming.html</loc>
-<lastmod>2021-03-02T19:38:14+08:00</lastmod>
+<loc>./2020-Fall-Intro-to-computer-programming.html</loc>
+<lastmod>2021-03-04T15:38:04+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/category/misc.html</loc>
-<lastmod>2021-03-02T19:38:14+08:06</lastmod>
+<loc>./category/misc.html</loc>
+<lastmod>2021-03-04T15:38:04+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/tag/2020fallcp.html</loc>
-<lastmod>2021-03-02T19:38:14+08:06</lastmod>
+<loc>./tag/2020fallcp.html</loc>
+<lastmod>2021-03-04T15:38:04+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823120.github.io/CD2021/blog/author/yen.html</loc>
-<lastmod>2021-03-02T19:38:14+08:06</lastmod>
+<loc>./author/yen.html</loc>
+<lastmod>2021-03-04T15:38:04+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
