@@ -95,9 +95,9 @@ g.es("admin pelican Github 執行完畢")
 Title: 協同產品設計
 Date: 2020-08-13 11:00
 Category: Misc
-Tags: 2020FallCP
-Slug: 2020-Fall-Intro-to-computer-programming
-Author: yen
+Tags: 協同產品設計實習
+Slug: 40823120cd2021
+Author:40823124
 ---
 
 2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.

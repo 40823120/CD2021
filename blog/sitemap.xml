@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2021-03-04T15:42:25-00:00</lastmod>
+<lastmod>2021-03-04T15:49:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2021-03-04T15:42:25-00:00</lastmod>
+<lastmod>2021-03-04T15:49:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2021-03-04T15:42:25-00:00</lastmod>
+<lastmod>2021-03-04T15:49:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2021-03-04T15:42:25-00:00</lastmod>
+<lastmod>2021-03-04T15:49:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -39,29 +39,29 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./2020-Fall-Intro-to-computer-programming.html</loc>
-<lastmod>2021-03-04T15:38:04+08:00</lastmod>
+<loc>./40823120cd2021.html</loc>
+<lastmod>2021-03-04T15:49:32+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./category/misc.html</loc>
-<lastmod>2021-03-04T15:38:04+08:06</lastmod>
+<lastmod>2021-03-04T15:49:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/2020fallcp.html</loc>
-<lastmod>2021-03-04T15:38:04+08:06</lastmod>
+<loc>./tag/xie-tong-chan-pin-she-ji-shi-xi.html</loc>
+<lastmod>2021-03-04T15:49:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./author/yen.html</loc>
-<lastmod>2021-03-04T15:38:04+08:06</lastmod>
+<loc>./author/40823124.html</loc>
+<lastmod>2021-03-04T15:49:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
