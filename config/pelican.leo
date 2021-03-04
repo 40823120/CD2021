@@ -92,7 +92,7 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180423103639.1"></t>
 <t tx="leo.20180423103656.1">@language md
 ---
-Title: 2020 Fall CP 課程
+Title: 協同管理設計
 Date: 2020-08-13 11:00
 Category: Misc
 Tags: 2020FallCP
