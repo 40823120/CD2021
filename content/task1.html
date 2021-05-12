@@ -134,6 +134,25 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">stage3 << <a href='stage3.html'>Previous</a> <br /><h1>task1</h1>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("stage3_2a.txt") as gp:
+    # readlines will read into the whole line and put into list format
+    # has \n at the end of each line
+    data = gp.readlines()
+    data = [d.replace('4823122','40823122') for d in data]
+    data = [v.replace('\t\t\t\t','') for v in data]
+#print(len(data))
+for p in range(len(data)):
+    group = data[p].rstrip("\n").split("\t")
+    print('&lt;p&gt;'+group[0]+' | &lt;a href="https://'+group[1]+'.github.io/stage3-ag'+group[0][9]+'"&gt;網站&lt;/a&gt;  &lt;a href="https://github.com/'+group[2]+'/stage3-ag'+group[0][9]+'"&gt;倉儲&lt;/a&gt;&lt;/p&gt;')
+    for  q in range(2,18,2):
+        try:
+              print('&lt;p&gt;'+group[q]+' | Website:'+'&lt;a href="https://'+group[q]+'.github.io/cd2021'+'"&gt;'+group[q]+'&lt;/a&gt;'+' | Repository:'+'&lt;a href="https://github.com/'+group[q]+'/cd2021'+'"&gt;'+group[q]+'&lt;/a&gt;'+' | Group Website:'+'&lt;a href="https://'+group[q]+'.github.io/stage3-ag'+group[0][9]+'"&gt;'+group[q]+'&lt;/a&gt;&lt;/p&gt;' )
+        except:
+            continue
+            
+
+</pre>
 <p>stage3_ag1 | <a href="https://40823131.github.io/stage3-ag1">網站</a> <a href="https://github.com/40823131/stage3-ag1">倉儲</a></p>
 <p>40823131 | Website:<a href="https://40823131.github.io/cd2021">40823131</a> | Repository:<a href="https://github.com/40823131/cd2021">40823131</a> | Group Website:<a href="https://40823131.github.io/stage3-ag1">40823131</a></p>
 <p>a40823112 | Website:<a href="https://a40823112.github.io/cd2021">a40823112</a> | Repository:<a href="https://github.com/a40823112/cd2021">a40823112</a> | Group Website:<a href="https://a40823112.github.io/stage3-ag1">a40823112</a></p>
