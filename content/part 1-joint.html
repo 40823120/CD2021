@@ -133,20 +133,43 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">part 1-joint << <a href='part 1-joint.html'>Previous</a> <a href='Week17.html'>Next</a> >> Week17<br /><h1>Week16</h1>
-<h4>MTB_robot 的取放方塊流程規劃 (Process Planning):</h4>
-<h4>1. Onshape 零組件繪製 (20%)</h4>
-<p>零組件必須在<span> </span><a href="https://www.onshape.com/">Onshape</a><span> </span>繪圖, 並提供可公開分享之零組件連結於頁面及回報區中.</p>
-<h4>2. 建立 CoppeliaSim 4.1.0 MTB robot 場景 (20%)</h4>
-<p>請以自行繪製之零件輸入 CoppeliaSim 後, 組合為 MTB robot 模型, 並利用 Leo Editor 以 require 導入 Lua 程式運作, 分別控制各軸轉動示範, 所完成的所有檔案請存入 W16_exam 後壓縮為 W16_exam.7z 後送至個人 @gm 帳號下的 Google Drive 後將連結設為任何人皆可下載, 並將連結與操作嵌入影片放在 W16 頁面與回報區中 .</p>
-<h4>3. 手臂末端加入 components-gripper-suction pad 吸盤 (20%)</h4>
-<p>請接續上述 MTB robot, 在其末端接上 force sensor 後接上標準 suction pad 後, 分別導入 W15 週線上課程之鍵盤控制程式後, 拍攝影片示範 W15 線上課程中之操作與示範過程.</p>
-<h4>4. 逆向運動學函式 (20%)</h4>
-<p>請根據 W15 線上課程內容之 Inverse Kinematics 方程式 (<a href="https://www.youtube.com/watch?v=IKOGwoJ2HLk&amp;t=35s">影片1</a><span> </span>或<a href="https://www.youtube.com/watch?v=eIZuz1XCd0w&amp;t=183s">影片2</a>), 以程式指定方塊取放之兩個位置 - (0.2, 0.7, 0.05) 與 (-0.3, -0.55, 0.05), 以前述 Leo Editor Lua 程式編寫方法, 分別採鍵盤控制與程式迴圈方式執行 W15 兩個指定位置之方塊取放.</p>
-<h4>5. Python remote API 逆向運動學函式 (20%)</h4>
-<p>請利用 Python remote API 程式重現以迴圈方式執行 W15 兩個指定位置之方塊取放.</p>
+    <div id="tipue_search_content">Week15 << <a href='Week15.html'>Previous</a> <a href='Week16.html'>Next</a> >> Week16<br /><h1>part 1-joint</h1>
 <p></p>
-<br />part 1-joint << <a href='part 1-joint.html'>Previous</a> <a href='Week17.html'>Next</a> >> Week17</div>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/IKOGwoJ2HLk" title="YouTube video player" width="560"></iframe></p>
+<p>原文</p>
+<p>1.We saw this simple two-link robot in the previous lecture about forward kinematics.</p>
+<p>2.The tooltip pose of this robot is discribed simply by two number ,the coordinates x and y with</p>
+<p>respect to the world coordinate frame.</p>
+<p>3.So, the problem here is that given x and y, we want to determine the joined angles, Q1 and</p>
+<p>Q2.</p>
+<p>4.The solution that we're going to follow in this particular section is a geometric<br/>ONE. We're going to start with a simple piece of construction.</p>
+<p>5.We're going to overlay the red triangle on top of our robot.</p>
+<p>6.We know that the end point coordinate is x, y, so the vertical height of the triangle is y,horizontal width is x.</p>
+<p>7.And, using Pythagoras theorem, we can write thagoras r squared equals x squared plus y squared.</p>
+<p>8.So far.so easy. Now, we're going to look at this triangle highlighted here in red and we want to determine the angle alpha.</p>
+<p>9.In order to do that, we need to use the cosine rule.</p>
+<p>10.And, if you're a little rusty on the cosine rule, here is a bit of a refresher.We have an arbitrary triangle.We don't have to have any right angles in it and we're going to label the length of this edge as A and the angle opposite that edge, we're going to label as little a.<br/>And, we do the same for this edge and this angle, and this edge and this angle.</p>
+<p>11.So, all together, the sides are labelled capitals A, B and C, and the angles are labelled little a, little b, and little c.So, the cosine rule is simply this relationship here.</p>
+<p>12.It's a bit like Pythagoras' theorem except for this extra term on the end with the cos a in it.</p>
+<p>Now, let's apply the cosine rule to the particular triangle we looked at a moment rul ago.</p>
+<p><br/>13.It's pretty straightforward to write down this particular relationship.<br/>We can isolate the term cos alpha which gives us the angle alpha that we're interested in.<br/>And, it's defined in terms of the constant link lengths, A1 and A2 and the position of the end effector,x and y.</p>
+<p>14.We can write this simple relationship between the angles alpha and Q2.<br/>And, we know from the shape of the cosine function that cos of Q2 must be equal to negative of cos alpha.</p>
+<p><br/>15.This time, let's just write an expression for the cosine of the joined angle Q2.<br/>Now, we're going to draw yet another red triangle and we're going apply some simple trigonometry here.</p>
+<p><br/>16.If we know Q2, then we know this length and this length of the red triangle.We can write this relationship for the sine of the joined angle Q2.</p>
+<p>17.Now, we can consider this bigger triangle whose angle is beta and this side length of the triangle is given here in blue.And, the length of the other side of the triangle is this.</p>
+<p>18.So, now we can write an expression for the angle beta in terms of these parameters here.<br/>Going back to the red triangle that we drew earlier, we can establish a relationship between Q1 and the angle beta.Introduce yet another angle, this one gamma and we can write a relationship between the angle gamma and the tooltip coordinates x and y.</p>
+<p>19.Now, we can write a simple relationship between the angles that we've constructed, gamma and beta and the joined angle we're interested in which is Q1.And, the total relationship looks something like this.</p>
+<p>20.Quite a complex relationship, it gives us the angle of joined one, that's Q1 in terms of the end effector coordinates y and x, and a bunch of constants, a1 and a2, and it's also a function of the second joint angle, Q2.So, let's summarize what it is that we have derived here.1</p>
+<p>21.We have an expression for the cosine of Q2 and we have an expression for Q1.Now, the cosine function is symmetrical about 0.So, if we know the value of the cosine of Q2, then there are two possible solutions, a positive angle and a negative angle</p>
+<p>22.We're going to explicitly choose the positive angle, which means that I can write this expression here.And now, we have what we call the inverse kinematic solution for this two-link robot.<br/>We have an expression for the two joined angles, Q1 and Q2 in terms of the end effector pose x and y, and a bunch of constants.</p>
+<p>23.You notice that the two equations are not independent.The equation for Q1, in fact, depends on the solution for Q2.In this case, Q2 is negative and we're going to write the solution for Q2 with a negative sign in front of the inverse cosine.</p>
+<p></p>
+<p>24.Now, we need to solve for Q1, so we're going to introduce this particular red triangle, the angle beta that we solved previously, and the angle gamma which is defined in terms of y and x.Now, we write a slightly different relationship between q1, gamma and beta, different to what we had before.<br/>There’s a change of sign involved.Then, we can substitute all that previous equation and come up with this expression for q1.Again, there is a change of sign here.</p>
+<p>25.Previously, this was a negative sign.And, here in summary form is the solution for the inverse kinematics of our two-link robot when it is in this particular configuration, where q2 is negative.<br/>Let’s compare the two solutions, the case where q2 is positive and the case where q2 is negative.</p>
+<p></p>
+<h4>中文翻譯</h4>
+<p>1.我們在上一堂關於正向運動學的講座中看到了這個簡單的雙連桿機器人<br/>2.這個機器人的工具提示位姿簡單地由兩個數字來描述，坐標 x 和 y 與相對於世界坐標系。<br/>3.所以，這裡的問題是給定 x 和 y，我們想要確定連接角 Q1 和 Q2。<br/>4.我們將在本節中遵循的解決方案是幾何一。 我們將從一個簡單的結構開始。<br/>5.我們將在我們的機器人頂部覆蓋紅色三角形。<br/>6.我們知道終點坐標是x，y，所以三角形的垂直高度是y，水平寬度是x。<br/>7.並且，使用畢達哥拉斯定理，我們可以寫出 畢氏定理 r 平方等於 x 平方加 y 平方。<br/>8.到目前為止，很容易。 現在，我們將查看此處以紅色突出顯示的三角形，我們要確定角度α。<br/>9.為了做到這一點，我們需要使用 cos 規則。<br/>10.而且，如果你對 cos 規則有點生疏，這裡有一點複習。我們有一個任意三角形。我們不必在其中有任何直角，我們將這條邊的長度標記為 A，而與該邊相對的角度，我們將標記為小 a。並且，我們對這條邊和這個角，以及這條邊和這個角做同樣的事情。<br/>11.因此，所有邊都標記為大寫字母 A、B 和 C，角標記為小 a、小 b 和小 c。所以，cos 規則就是這裡的這種關係。<br/>12.它有點像畢達哥拉斯的定理，除了最後一個額外的術語，其中有 cos a。現在，讓我們將 cos 規則應用於我們剛才看到的特定三角形。<br/>13.寫下這種特殊關係非常簡單。我們可以分離出術語 cos α，它為我們提供了我們感興趣的角度 α。而且，它是根據恆定連桿長度 A1 和 A2 以及末端執行器的位置 x 和 y 定義的。<br/>14.我們可以寫出角度 α 和 Q2 之間的這種簡單關係。而且，我們從餘弦函數的形狀知道，Q2 的 cos 必須等於 cos α 的負值。<br/>15.這一次，讓我們為連接角 Q2 的cos寫一個表達式。現在，我們將繪製另一個紅色三角形，並在此處應用一些簡單的三角函數。<br/>16.如果我們知道 Q2，那麼我們就知道這個長度和這個紅色三角形的長度。我們可以為連接角 Q2 的 sin 寫出這種關係。<br/>17.現在，我們可以考慮這個更大的三角形，它的角是β，三角形的這條邊長在這裡用藍色給出。並且，三角形另一邊的長度是這個。<br/>18.所以，現在我們可以在此處根據這些參數編寫角度 β 的表達式。回到我們之前畫的紅色三角形，我們可以建立 Q1和角度 β 之間的關係。引入另一個角度，這個 ɣ，我們可以寫出角度 ɣ 和工具提示坐標 x 和 y 之間的關係。<br/>19.現在，我們可以在我們構建的角度 ɣ 和 β 與我們感興趣的連接角度 Q1 之間寫出一個簡單的關係。而且，整個關係看起來像這樣。<br/>20.相當複雜的關係，它為我們提供了連接的角度，即根據末端執行器坐標 y 和 x 的 Q1，以及一系列常量 a1 和 a2，它也是第二個關節角度 Q2 的函數。所以，讓我們總結一下我們在這裡得出的結論。1<br/>21.我們有 Q2 的 cos 表達式和 Q1 的表達式。現在，cos 函數關於 0 對稱。所以，如果我們知道 Q2 的 cos 值，那麼有兩種可能的解，一個正角和一個負角<br/>22.我們將明確選擇正角，這意味著我可以在這裡寫這個表達式。現在，我們有了這個雙連桿機器人的逆運動學解決方案。我們有兩個連接角 Q1 和 Q2 的表達式，根據末端執行器姿勢 x 和 y 以及一系列常數。<br/>23.你注意到這兩個方程不是獨立的。事實上，Q1 的方程取決於 Q2 的解。在這種情況下，Q2 是負數，我們將在反 cos 前用負號編寫 Q2 的解。<br/>24.現在，我們需要求解 Q1，因此我們將介紹這個特定的紅色三角形、我們之前求解的角度 β 以及根據 y 和 x 定義的角度 ɣ。現在，我們在 q1、ɣ 和 β 之間寫出略有不同的關係，與我們之前的關係不同。涉及到符號的變化。然後，我們可以替換之前的所有等式，並得出 q1 的這個表達式。同樣，這裡的符號發生了變化。以前，這是一個負面信號。<br/>25.並且，這裡總結性地是我們的雙連桿機器人在這種特定配置下的逆運動學的解決方案，其中 q2 是負數。讓我們比較兩個解決方案，q2 為正的情況和 q2 為負的情況。</p>
+<br />Week15 << <a href='Week15.html'>Previous</a> <a href='Week16.html'>Next</a> >> Week16</div>
         
     <!-- footer -->
       <div class="container">
